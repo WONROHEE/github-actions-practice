@@ -8,12 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
       
       - name: Set up Python
-        uses: action/setup-python@v3
+        uses: actions/setup-python@v3
         with:
           python-version: '3.11'
 
